@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+}
+
+.lenguages_container {
+  margin: 3rem 0 2rem 0;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(2, 13rem);
+  grid-auto-rows: minmax(5rem, auto);
+  place-content: center;
+  grid-template-areas:
+    "title title"
+    "lenguageB Bnumber"
+    "lenguageI Inumber"
+    "lenguageA Anumber";
+}
+
+.lenguages_title {
+  grid-area: title;
+  background-color: #9fc5e8;
+}
+
+.lenguage_0 {
+  grid-area: lenguageB;
+  background-color: #93c47d;
+}
+
+.lenguage_number0 {
+  grid-area: Bnumber;
+  background-color: #93c47d;
+}
+
+.lenguage_1 {
+  grid-area: lenguageI;
+  background-color: #ffe599;
+}
+
+.lenguage_number1 {
+  grid-area: Inumber;
+  background-color: #ffe599;
+}
+
+.lenguage_2 {
+  grid-area: lenguageA;
+  background-color: #ea9999;
+}
+
+.lenguage_number2 {
+  grid-area: Anumber;
+  background-color: #ea9999;
+}
+
+.lenguages_container .item {
+  text-align: center;
+  border: 0.1rem solid #000;
+}
+
+.lenguages_container .item p {
+  margin-top: 1.5rem;
+}
